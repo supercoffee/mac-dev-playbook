@@ -8,25 +8,32 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove:
-  - Launchpad
-  - TV
-  - Podcasts
   - 'App Store'
-  - Notes
   - Calendar
   - Contacts
+  - FaceTime
+  - Keynote
+  - Launchpad
   - Maps
   - Mail
   - Messages
   - Music
   - News
+  - Notes
+  - Numbers
+  - Pages
   - Photos
   - Podcasts
   - Siri
   - Safari
   - Reminders
   - Stickies
+  - 'System Preferences'
+  - TV
 dockitems_persist:
+  - name: "Settings"
+    path: "/Applications/System Preferences.app/"
+    pos: 2
   - name: "Firefox"
     path: "/Applications/Firefox.app/"
     pos: 3
@@ -63,6 +70,7 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .config/karabiner/karabiner.json
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -128,14 +136,13 @@ homebrew_cask_apps:
   - paw
   - phpstorm
   - postman
+  - rectangle
   - slack
   - sourcetree
   - the-unarchiver
   - transmission
   - ultimaker-cura
   - unclack
-  - virtualbox
-  - virtualbox-extension-pack
   - viscosity
   - visual-studio-code
   - webstorm

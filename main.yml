@@ -25,7 +25,7 @@
       when: configure_dock
       tags: ['dock']
       environment:
-        PATH: '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+        PATH: '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin'
 
   tasks:
     - import_tasks: tasks/sudoers.yml

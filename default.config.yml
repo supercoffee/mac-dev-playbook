@@ -9,9 +9,11 @@ configure_osx: true
 configure_dock: true
 dockitems_remove:
   - 'App Store'
+  - Apps
   - Calendar
   - Contacts
   - FaceTime
+  - Games
   - Keynote
   - Launchpad
   - Maps
@@ -22,32 +24,34 @@ dockitems_remove:
   - Notes
   - Numbers
   - Pages
+  - Phone
   - Photos
   - Podcasts
   - Siri
   - Safari
   - Reminders
   - Stickies
-  - 'System Preferences'
+  - 'System Settings'
   - TV
+  - 'iPhone Mirroring'
 dockitems_persist:
-  - name: "Settings"
-    path: "/Applications/System Preferences.app/"
-    pos: 2
   - name: "Firefox"
     path: "/Applications/Firefox.app/"
-    pos: 3
+    pos: 2
   - name: "Firefox Developer Edition"
     path: "/Applications/Firefox Developer Edition.app/"
-    pos: 4
+    pos: 3
   - name: "WebStorm"
     path: "/Applications/WebStorm.app/"
-    pos: 5
+    pos: 4
   - name: "PhpStorm"
     path: "/Applications/PhpStorm.app/"
-    pos: 6
+    pos: 5
   - name: "Iterm"
     path: "/Applications/Iterm.app/"
+    pos: 6
+  - name: "Slack"
+    path: "/Applications/Slack.app/"
     pos: 7
   - name: 'screenshots'
     path: '~/Pictures/screenshots/'

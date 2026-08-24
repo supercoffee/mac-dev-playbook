@@ -69,7 +69,6 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .osx
-  - .vimrc
   - .config/karabiner/karabiner.json
 
 homebrew_installed_packages:
@@ -80,73 +79,40 @@ homebrew_installed_packages:
   - cloc
   - curl
   - doctl
-  - gettext
-  - gifsicle
   - git
-  - github/gh/gh
-  - gpg
+  - gh
   - iperf
   - imagemagick
-  - libevent
-  - sqlite
-  - mcrypt
-  - mysql
-  - mysql-client
   - nmap
   - node
   - nvm
+  - opencode
   - php
   - ssh-copy-id
-  - readline
-  - openssl
-  - pv
+  - openssl@3
   - s3cmd
-  - wget
-  - wrk
   - zsh-history-substring-search
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-versions
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
-  - google-chrome
-  - android-commandlinetools
-  - balenaetcher
-  - clion
-  - cyberduck
-  - darktable
+  - docker-desktop
   - datagrip
-  - db-browser-for-sqlite
-  - docker
   - firefox
-  - firefox-developer-edition
-  - hammerspoon
-  - handbrake
+  - firefox@developer-edition
+  - handbrake-app
   - intellij-idea
   - iterm2
   - karabiner-elements
   - libreoffice
-  - macdown
-  - ngrok
-  - owasp-zap
-  - paw
+  - ollama-app
   - phpstorm
   - postman
-  - rectangle
   - slack
-  - sourcetree
-  - the-unarchiver
   - transmission
-  - ultimaker-cura
-  - unclack
-  - viscosity
-  - visual-studio-code
   - webstorm
-  - wireshark
+  - wireshark-app
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: [ ]
@@ -166,7 +132,8 @@ gem_packages: [ ]
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: [ ]
+npm_packages:
+  - name: "@anthropic-ai/claude-code"
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
